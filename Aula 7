@@ -7,37 +7,39 @@
         "colab_type": "text"
       },
       "source": [
-        "<a href=\"https://colab.research.google.com/github/lucasnundev/engenharia-de-prompt-e-aplicacao-AI/blob/main/Conhe%C3%A7a_o_Colab.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+        "<a href=\"https://colab.research.google.com/github/lucasnundev/engenharia-de-prompt-e-aplicacao-AI/blob/main/Aula%207\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
       ]
     },
     {
       "cell_type": "markdown",
       "source": [
-        "Aula 7 de miniprojeto"
+        "Aula 7\n",
+        "\n",
+        "Nome: Lucas Nunes de Sousa"
       ],
       "metadata": {
-        "id": "PvuxM5XPqTsc"
+        "id": "r2_ebb1V0TA_"
       }
     },
     {
       "cell_type": "code",
       "source": [
-        "print (\"olá turma de quarta-feira\")"
+        "print(\"Ola turma de quarta feira\")"
       ],
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "id": "2Rz36ul6qYMv",
-        "outputId": "5ea23e63-bd2c-44d1-e93b-85abac273476"
+        "id": "PfSJ2Q4k0TWK",
+        "outputId": "34607fe5-ca7e-48c0-add8-9be032f43509"
       },
-      "execution_count": 1,
+      "execution_count": 8,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "olá turma de quarta-feira\n"
+            "Ola turma de quarta feira\n"
           ]
         }
       ]
@@ -45,7 +47,6 @@
     {
       "cell_type": "code",
       "source": [
-        "#SOMA DE LISTA\n",
         "numeros = [1,1,1,1,1] # Exemplo de lista\n",
         "soma = sum(numeros)\n",
         "print(soma)"
@@ -54,10 +55,10 @@
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "id": "q0Z_pWOCqjkP",
-        "outputId": "f5166ed1-659c-4f51-97f2-c5ac87333430"
+        "id": "4NjQqSqk0sjg",
+        "outputId": "c40f6aa6-f155-4476-f211-ee6f71bf558c"
       },
-      "execution_count": 2,
+      "execution_count": 9,
       "outputs": [
         {
           "output_type": "stream",
@@ -88,9 +89,9 @@
         "  return True"
       ],
       "metadata": {
-        "id": "yck5njoYqoqR"
+        "id": "XdX6WFMY0wlg"
       },
-      "execution_count": null,
+      "execution_count": 10,
       "outputs": []
     },
     {
@@ -104,7 +105,7 @@
         "print(f'97 é primo? {eh_primo(97)}') # Esperado: True (exemplo de número maior)"
       ],
       "metadata": {
-        "id": "jJwk_ITkqxES"
+        "id": "TTXSTpTB03Ii"
       },
       "execution_count": null,
       "outputs": []
@@ -112,7 +113,25 @@
     {
       "cell_type": "code",
       "source": [
-        "def adicionar(a, b):\n",
+        "def inverte_texto(texto):\n",
+        "  # Usando slicing para inverter a string\n",
+        "  return texto[::-1]\n",
+        "\n",
+        "# Exemplo de como usar a função e imprimir o resultado\n",
+        "minha_string = \"olá mundo\"\n",
+        "string_invertida = inverte_texto(minha_string)\n",
+        "print(string_invertida)"
+      ],
+      "metadata": {
+        "id": "u4wstftE08fs"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def somar(a, b):\n",
         "  return a + b\n",
         "\n",
         "def subtrair(a, b):\n",
@@ -123,27 +142,23 @@
         "\n",
         "def dividir(a, b):\n",
         "  if b == 0:\n",
-        "    raise ValueError(\"Erro: Divisão por zero não é permitida!\")\n",
+        "    return \"Erro: Divisão por zero não é permitida!\"\n",
         "  return a / b\n",
-        "print(f\"5 + 3 = {adicionar(5, 3)}\")\n",
+        "  # Exemplos de uso\n",
+        "print(f\"5 + 3 = {somar(5, 3)}\")\n",
         "print(f\"10 - 4 = {subtrair(10, 4)}\")\n",
         "print(f\"6 * 7 = {multiplicar(6, 7)}\")\n",
         "print(f\"20 / 5 = {dividir(20, 5)}\")\n",
-        "\n",
-        "# Teste de divisão por zero\n",
-        "try:\n",
-        "  print(f\"10 / 0 = {dividir(10, 0)}\")\n",
-        "except ValueError as e:\n",
-        "  print(e)"
+        "print(f\"10 / 0 = {dividir(10, 0)}\") # Teste de divisão por zero"
       ],
       "metadata": {
+        "id": "3MinbGxb1hwQ",
+        "outputId": "d5540d8f-ad9f-4b66-d791-705e3fcca149",
         "colab": {
           "base_uri": "https://localhost:8080/"
-        },
-        "id": "VYzWvCIrsB5L",
-        "outputId": "b6042601-b7c3-4a4e-f5ad-10ac88fdc9e9"
+        }
       },
-      "execution_count": 4,
+      "execution_count": 11,
       "outputs": [
         {
           "output_type": "stream",
@@ -153,7 +168,7 @@
             "10 - 4 = 6\n",
             "6 * 7 = 42\n",
             "20 / 5 = 4.0\n",
-            "Erro: Divisão por zero não é permitida!\n"
+            "10 / 0 = Erro: Divisão por zero não é permitida!\n"
           ]
         }
       ]
